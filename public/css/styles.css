@@ -1,0 +1,55 @@
+body {
+    background-color: #000000;
+    color: #33ff00;
+}
+
+h1, h3, p, strong, .btn, .list-group-item {
+    color: #33ff00;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    background-color: #000000;
+    color: #33ff00;
+    border: 1px solid #33ff00;
+}
+
+.btn-primary, .btn-secondary {
+    background-color: #000000;
+    border-color: #33ff00;
+    color: #33ff00;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #333333;
+}
+
+.btn-complete, .btn-delete {
+    background-color: #000000;
+    border-color: #33ff00;
+    color: #ffffff;
+}
+
+.btn-complete:hover, .btn-delete:hover {
+    background-color: #333333;
+}
+
+.container, .bg-light, .border, .rounded {
+    background-color: #000000 !important;
+    border-color: #33ff00 !important;
+}
+
+.log-entry {
+    background-color: #000000 !important;
+    border-color: #33ff00 !important;
+}
+
+.list-group {
+    background-color: #000000;
+    border-color: #33ff00;
+}
+
+.list-group-item {
+    background-color: #000000;
+    border-color: #33ff00;
+}

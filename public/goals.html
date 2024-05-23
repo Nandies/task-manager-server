@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Logs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Goal Logs</h1>
+        <div id="logs" class="pre-scrollable bg-light p-3 border rounded"></div>
+        <a href="/" class="btn btn-primary btn-block mt-3">Back to Task Manager</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.get('/logs/goals', function(data) {
+                const logLines = data.split('\n').filter(line => line.trim() !== '');
+                const logEntries = logLines.map(line => {
+                    const [timestamp, action] = line.split(' - ');
+                    const [type, details] = action.split(': ');
+                    return { timestamp, type, details: JSON.parse(details) };
+                });
+                $('#logs').html(logEntries.map(entry => `
+                    <div class="log-entry border-bottom pb-2 mb-2">
+                        <strong>${entry.timestamp}</strong>
+                        <p>${entry.type}: ${entry.details.description || entry.details.id} (${entry.type === 'goals completed' ? 'Completed' : entry.type === 'goals deleted' ? 'Deleted' : 'Updated'})</p>
+                    </div>
+                `).join(''));
+            });
+        });
+    </script>
+</body>
+</html>

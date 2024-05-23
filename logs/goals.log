@@ -1,0 +1,17 @@
+2024-05-19T19:20:25.810Z - goals deleted: {"id":"3"}
+2024-05-19T19:23:53.140Z - goals added: {"id":11,"description":"add logs","completed":0}
+2024-05-19T19:24:20.986Z - goals deleted: {"id":"11"}
+2024-05-19T19:27:43.513Z - goals added: {"id":12,"description":"test","completed":0}
+2024-05-19T19:27:49.364Z - goals updated: {"id":"12","completed":true}
+2024-05-19T19:27:55.517Z - goals deleted: {"id":"12"}
+2024-05-19T19:30:14.070Z - goals added: {"id":13,"description":"test","completed":0}
+2024-05-19T19:30:19.841Z - goals updated: {"id":"13","completed":true}
+2024-05-19T19:32:31.184Z - goals completed: {"id":"13","description":"null\n                        \n                            Complete\n                            Delete"}
+2024-05-19T19:32:38.957Z - goals added: {"id":14,"description":"test","completed":0}
+2024-05-19T19:32:41.262Z - goals completed: {"id":"14","description":"test\n                        \n                            Complete\n                            Delete"}
+2024-05-19T19:36:16.714Z - goals added: {"id":15,"description":"test","completed":0}
+2024-05-19T19:36:20.981Z - goals completed: {"id":"15","description":"test\n                        \n                            Complete\n                            Delete"}
+2024-05-19T19:43:05.163Z - goals added: {"id":16,"description":"Fix archives not working","completed":0}
+2024-05-19T19:45:57.620Z - goals completed: {"id":"4","description":"add remove goals in the c++ application"}
+2024-05-21T12:47:38.297Z - goals added: {"id":17,"description":"test","completed":0}
+2024-05-21T12:52:42.308Z - goals deleted: {"id":"17"}
